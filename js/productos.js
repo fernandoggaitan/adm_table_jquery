@@ -4,7 +4,7 @@ function productos(){
 	var fila_contenido = tbody.find('tr').first().html();
 	
 	$('#lista_productos').on('click', '.button_limpiar_producto', function(){		
-		$(this).parents('tr').eq(0).find('.titulo, .descripcion, .precio').val('');
+		$(this).parents('tr').eq(0).find('.nombre, .descripcion, .precio').val('');
 	});
 
 	$('#lista_productos').on('click', '.button_eliminar_producto', function(){		
